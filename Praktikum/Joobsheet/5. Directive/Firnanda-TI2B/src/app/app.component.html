@@ -1,0 +1,34 @@
+<!-- <percabangan pertama>
+<div *ngIf="courses.length > 0">
+  List of courses
+</div>
+<div *ngIf="courses.length == 0">
+  no courses yet
+</div> -->
+
+<!-- <percabangan kedua>
+    <div *ngIf="courses.length > 0; else noCourses">
+      List of courses
+    </div>
+    <ng-template #noCourses>
+      no courses yet
+    </ng-template> -->
+
+<!-- <percabangan ketiga>
+<div *ngIf="courses.length > 0; then coursesList else noCourses"></div>
+<ng-template #coursesList>
+  List of courses
+</ng-template>
+<ng-template #noCourses>
+  no courses yet
+</ng-template> -->
+
+<!-- <hidden>
+<div [hidden]="courses.length == 0">
+  List courses list
+</div>
+<div [hidden]="courses.length > 0">
+  no courses yet
+</div> -->
+
+<router-outlet></router-outlet>
