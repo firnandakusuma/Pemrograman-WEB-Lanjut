@@ -31,4 +31,48 @@
   no courses yet
 </div> -->
 
+<!-- <ul class="nav nav-pills">
+  <li class="nav-item">
+    <a
+      (click)="viewMode = 'map'"
+      class="nav-link"
+      [class.active]="viewMode == 'map'"
+      >Map View</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      (click)="viewMode = 'list'"
+      class="nav-link"
+      [class.active]="viewMode == 'list'"
+      >List View</a
+    >
+  </li>
+</ul>
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map View Content</div>
+  <div *ngSwitchCase="'list'">List View Content</div>
+  <div *ngSwitchDefault>Other</div>
+</div> -->
+
+<!-- <ul>
+  <li *ngFor="let item of coursesFor; index as is">
+    {{i}}-{{item.name}}
+  </li>
+</ul> -->
+
+<!-- <button (click)="onAdd()">add</button>
+<ul>
+  <li *ngFor="let item of coursesFor; index as isEven">
+    {{item.name}}
+    <span *ngIf="isEven">(Even)</span>
+    <button (click)="onRemove(item)">Remove</button>
+    <button (click)="onChange(item)">update</button>
+  </li>
+</ul> -->
+<button (click)="loadCourses()">Tampilkan data</button>
+<li *ngFor="let itemone of coursesForOne">
+  {{itemone.nama}}
+</li>
+
 <router-outlet></router-outlet>
