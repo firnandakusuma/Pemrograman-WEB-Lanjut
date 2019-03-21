@@ -70,9 +70,36 @@
     <button (click)="onChange(item)">update</button>
   </li>
 </ul> -->
-<button (click)="loadCourses()">Tampilkan data</button>
-<li *ngFor="let itemone of coursesForOne">
+<!-- <br>
+&nbsp; <button (click)="loadCourses()">Tampilkan data</button>
+<li *ngFor="let itemone of coursesForOne; TrackBy:trackCourse">
   {{itemone.nama}}
-</li>
+</li> -->
 
+<!-- <div *ngIf="courses.length > 0">
+  list of couses
+</div>
+<ng-template [ngIf]="courses.length>0">
+  <div>
+    list of course
+  </div>
+</ng-template> -->
+
+<!-- <span
+class="fa"
+[class.fa-star]="isSelected"
+[class.fa-star-o]="!isSelected"
+(click)="onClickAlias()"></span>
+<span
+class="fa"
+[ngClass]="{
+  'fa-star':isSelected,
+  'fa-star-o':!isSelected
+}"
+(click)="onClickAlias()"></span> -->
+
+<!-- percobaan costum percobaan -->
+<br>
+<!-- &nbsp;<input type="text" appInputFormat [format]="'uppercase'"> -->
+&nbsp;<input type="text" [appInputFormat] ="'uppercase'">
 <router-outlet></router-outlet>
